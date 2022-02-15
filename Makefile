@@ -51,6 +51,10 @@ MAKEARCH := $(MAKE) ARCH=$(ARCH) CROSS_COMPILE=$(CROSS_COMPILE)
 all:
 	$(MAKEARCH) -C $(KDIR) M=$(PWD) modules
 
+firmware:
+	@echo "COPYING FIRMWARE FILES"
+    	$(shell cp ./tfa98xx.cnt /lib/firmware/ )
+
 clean:
 	$(MAKEARCH) -C $(KDIR) M=$(PWD) clean
 	rm -f $(snd-soc-tfa98xx-objs)
