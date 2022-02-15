@@ -36,6 +36,7 @@
 #define TFA98XX_FLAG_ADAPT_NOISE_MODE   (1 << 9)
 
 #define TFA98XX_NUM_RATES		9
+#define FW_ACTION_HOTPLUG 1
 
 /* DSP init status */
 enum tfa98xx_dsp_init_state {
