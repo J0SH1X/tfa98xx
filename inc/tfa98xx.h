@@ -36,7 +36,9 @@
 #define TFA98XX_FLAG_ADAPT_NOISE_MODE   (1 << 9)
 
 #define TFA98XX_NUM_RATES		9
+#if LINUX_VERSION_CODE >= KERNEL_VERSION(5,0,0)
 #define FW_ACTION_HOTPLUG 1
+#endif
 
 /* DSP init status */
 enum tfa98xx_dsp_init_state {
