@@ -2719,7 +2719,7 @@ static struct snd_soc_dai_driver tfa98xx_dai[] = {
 #if LINUX_VERSION_CODE >= KERNEL_VERSION(5,0,0)
 		.symmetric_rate = 1,
 #endif
-#if LINUX_VERSION_CODE >= KERNEL_VERSION(3,14,0)
+#if LINUX_VERSION_CODE >= KERNEL_VERSION(3,14,0) && LINUX_VERSION_CODE < KERNEL_VERSION(5,0,0)
 		.symmetric_channels = 1,
 		.symmetric_samplebits = 1,
 #endif
